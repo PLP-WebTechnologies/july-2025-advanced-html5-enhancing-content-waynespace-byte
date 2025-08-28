@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My structured html content</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my structured html Web Page</h1>
+        </header>
+        <main>>
+            <!-- List -->
+            <section>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Coding</li>
+                    <li>Swimming</li>
+                </ul>
+            </section>
+
+            <!-- Table -->
+            <section>
+                <h2>Weekly Schedule</h2>
+                <table>
+                    <tr><th>Day</th><th>Task</th></tr>
+                    <tr><td>Mon</td><td>Python</td></tr>
+                    <tr><td>Tue</td><td>Html</td></tr>
+                </table>
+            </section>
+
+            <!-- Media -->
+            <section>
+                <h2>Favorite Song</h2>
+                <iframe width="325" height="274" 
+                    src="https://www.youtube.com/embed/du-A6RqfIrM" title="Cuban Soul Nights 🌙 Buena Vista Social Club Style Cuban Music" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
+            </section>
+
+            <!-- Form -->
+            <section>
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="Email">Email:</label>
+                        <input type="email" id="email" name="Email" required>
+                        <br>
+                        <label for="Age">Age:<label>
+                        <input type="number" id="age"  name="Age" min="18" max="99" required></label><br>
+                        <label for="Password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="6" required></label>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
